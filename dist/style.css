@@ -191,11 +191,15 @@ main.container .news-homepage .new-news-container {
   background-color: hsl(240, 100%, 5%);
   padding: 1.375rem;
 }
-main.container .news-homepage .new-news-container > *:not(*:first-child) {
-  cursor: pointer;
-}
 main.container .news-homepage .new-news-container .new {
   padding-block: 1.875rem;
+}
+main.container .news-homepage .new-news-container .new h3 {
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+main.container .news-homepage .new-news-container .new h3:hover {
+  color: hsl(35, 77%, 62%);
 }
 main.container .news-homepage .new-news-container .new:not(main.container .news-homepage .new-news-container .new:last-child) {
   border-bottom: 1px solid hsl(236, 13%, 42%);
@@ -217,9 +221,6 @@ main.container .news-homepage .articles-container {
   flex-direction: column;
   row-gap: 2rem;
 }
-main.container .news-homepage .articles-container > * {
-  cursor: pointer;
-}
 main.container .news-homepage .articles-container .article {
   display: flex;
   justify-content: space-between;
@@ -236,6 +237,12 @@ main.container .news-homepage .articles-container .article .article-content {
   row-gap: 0.5rem;
 }
 main.container .news-homepage .articles-container .article .article-content h2 {
+  color: hsl(5, 85%, 63%);
+}
+main.container .news-homepage .articles-container .article .article-content h4 {
+  cursor: pointer;
+}
+main.container .news-homepage .articles-container .article .article-content h4:hover {
   color: hsl(5, 85%, 63%);
 }
 
