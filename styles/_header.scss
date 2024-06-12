@@ -1,0 +1,63 @@
+// Header / Navigation
+
+header {
+  height: 5.3125rem;
+  display: flex;
+  align-items: center;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.65);
+
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .open{
+      right: 0 !important;
+    }
+
+    .nav-links-for-mob {
+      position: absolute;
+      top: 0;
+      right: -70vw;
+
+      width: 70vw;
+      height: 100vh;
+      background-color: $off-white;
+
+      padding-inline: 1.25rem;
+
+      display: flex;
+      flex-direction: column;
+
+      .nav-close-btn {
+        margin-block: 1.625rem;
+        align-self: flex-end;
+      }
+
+      .nav-links {
+        padding-block: 3.125rem;
+
+        .nav-item {
+          padding-block: 1rem;
+
+          a {
+            color: $very-dark-blue;
+            font-size: 1.125rem;
+            font-weight: $fw-light;
+          }
+        }
+      }
+    }
+  }
+}
